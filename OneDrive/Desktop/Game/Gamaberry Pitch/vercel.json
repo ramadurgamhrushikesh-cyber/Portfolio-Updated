@@ -1,6 +1,6 @@
 {
   "version": 2,
   "routes": [
-    { "src": "/", "dest": "/Portfolio - Updated.html" }
+    { "src": "/", "dest": "/Portfolio.html" }
   ]
 }
