@@ -862,6 +862,161 @@ body{
 }
 .c-card-board.pulsing{animation:board-pulse .5s ease-out;}
 
+/* ═══════════════════════════════════════════════════════════
+   MOBILE RESPONSIVE — 768px and below
+═══════════════════════════════════════════════════════════ */
+@media(max-width:768px){
+  html,body{overflow:auto;height:auto;min-height:100%;}
+
+  /* Cover */
+  .cover-inner{padding:1.5rem 1rem;}
+  .cover-title{font-size:clamp(2.2rem,10vw,3.5rem);}
+  .cover-title span{font-size:clamp(1rem,4vw,1.4rem);}
+  .cover-subtitle{font-size:.95rem;margin-bottom:1.8rem;}
+  .cover-boards{gap:.8rem;margin-bottom:1.8rem;}
+  .mini-board{padding:.4rem;}
+  .cover-btns{flex-direction:column;align-items:center;gap:.7rem;}
+  .cover-btn{width:80%;max-width:260px;padding:.75rem 1.5rem;font-size:.85rem;}
+
+  /* Game Select Carousel */
+  .sel-header{padding:.8rem 1rem 0;flex-wrap:wrap;gap:.5rem;}
+  .sel-title{font-size:1rem;}
+  .sel-hint{font-size:.72rem;margin:.3rem 0 .8rem;}
+  .carousel-outer{padding:0 .2rem;}
+  .c-card{flex:0 0 240px;padding:1.2rem 1rem;}
+  .c-card-board{height:110px;}
+  .c-card-title{font-size:1rem;}
+  .c-card-desc{font-size:.78rem;}
+  .car-arrow{width:36px;height:36px;font-size:1.3rem;}
+  .sel-info-panel{
+    width:95%;padding:.9rem 1rem;
+    flex-direction:column;align-items:stretch;gap:.8rem;text-align:center;
+  }
+  .sel-info-title{font-size:.95rem;}
+  .sel-play-btn{width:100%;padding:.65rem 1rem;}
+
+  /* Mode Overlay */
+  .mode-box{padding:1.6rem 1.2rem 1.4rem;width:95%;max-width:none;max-height:90vh;overflow-y:auto;}
+  .mode-cards{grid-template-columns:1fr;gap:.8rem;}
+  .mode-card{padding:1rem;}
+  .mode-card-icon{font-size:1.8rem;}
+  .mode-card-title{font-size:.9rem;}
+  .mode-title{font-size:1.2rem;}
+  .mode-trophy{font-size:2rem;}
+  .room-code{font-size:1.8rem;letter-spacing:.25em;}
+
+  /* Instructions */
+  .instr-header{padding:1rem 1rem .8rem;}
+  .instr-header h1{font-size:1.1rem;}
+  .instr-nav{padding:.5rem 1rem;gap:.3rem;}
+  .instr-tab{font-size:.62rem;padding:.35rem .6rem;}
+  .instr-content{padding:1.2rem 1rem 3rem;}
+  .instr-card.active{grid-template-columns:1fr;gap:1.5rem;}
+  .instr-text h2{font-size:1.3rem;}
+
+  /* Game Screen */
+  .game-topbar{padding:.7rem .8rem;flex-wrap:wrap;gap:.5rem;}
+  .game-topbar-left{gap:.5rem;flex-wrap:wrap;}
+  .game-topbar-title{font-size:.85rem;}
+  .game-topbar-right{gap:.3rem;}
+  .topbar-btn{font-size:.65rem;padding:.35rem .6rem;}
+  .series-score{font-size:.62rem;padding:.15rem .5rem;}
+
+  .game-main{
+    grid-template-columns:1fr !important;
+    padding:1rem .8rem;gap:1rem;
+    justify-items:center;
+  }
+  .game-left,.game-right{
+    width:100%;max-width:none;
+    order:2;
+  }
+  .board-area{order:1;width:100%;}
+  #game-canvas{max-width:calc(100vw - 2rem);height:auto !important;}
+
+  /* Player panels compact */
+  .player-panel{padding:.8rem;margin-bottom:0;}
+  .pp-top{margin-bottom:.6rem;gap:.5rem;}
+  .pp-icon{width:28px;height:28px;}
+  .pp-name{font-size:.78rem;}
+  .pp-stat{padding:.3rem 0;}
+  .pp-stat-label{font-size:.7rem;}
+  .pp-stat-val{font-size:.85rem;}
+  .pp-piece{width:11px;height:11px;}
+  .pp-hand{gap:2px;}
+
+  .status-bar{font-size:.72rem;padding:.35rem .9rem;min-width:auto;}
+  .game-controls{gap:.4rem;}
+  .ctrl-btn{font-size:.7rem;padding:.4rem .9rem;}
+  .turn-arrow{font-size:1.2rem;min-width:24px;}
+
+  /* Win overlay */
+  .win-box{padding:2rem 1.5rem;width:92%;}
+  .win-trophy{font-size:3rem;}
+  .win-title{font-size:1.5rem;}
+  .win-sub{font-size:.95rem;}
+  .win-btns{flex-direction:column;gap:.6rem;}
+  .win-btns .ctrl-btn{width:100%;}
+
+  /* Waiting screen */
+  .wait-spinner{width:48px;height:48px;}
+  .wait-title{font-size:1.1rem;}
+  .wait-code{font-size:1.6rem;}
+}
+
+/* ═══════════════════════════════════════════════════════════
+   SMALL MOBILE — 480px and below
+═══════════════════════════════════════════════════════════ */
+@media(max-width:480px){
+  .cover-era{font-size:.65rem;letter-spacing:.25em;}
+  .cover-title{font-size:clamp(1.8rem,9vw,2.8rem);}
+  .cover-title span{font-size:clamp(.9rem,3.5vw,1.2rem);}
+  .cover-divider{margin:1rem auto;max-width:200px;}
+  .cover-subtitle{font-size:.85rem;line-height:1.5;margin-bottom:1.4rem;}
+  .cover-boards{gap:.5rem;}
+  .mini-board-label{font-size:.5rem;}
+
+  .c-card{flex:0 0 200px;padding:1rem .8rem;}
+  .c-card-board{height:90px;}
+  .c-card-badge{font-size:.52rem;padding:.15rem .5rem;}
+  .c-card-era{font-size:.55rem;}
+  .c-card-title{font-size:.9rem;}
+  .sel-header .back-btn{font-size:.65rem;padding:.3rem .7rem;}
+
+  .game-topbar{padding:.5rem .6rem;}
+  .game-topbar-left .back-btn{font-size:.6rem;padding:.3rem .6rem;}
+  .game-topbar-title{font-size:.75rem;}
+
+  /* Compact player panels */
+  .player-panel{padding:.6rem .8rem;}
+  .pp-top{margin-bottom:.4rem;}
+  .pp-icon{width:24px;height:24px;}
+  .pp-stat{padding:.2rem 0;}
+
+  .mode-box{padding:1.2rem 1rem;border-radius:12px;}
+  .mode-title{font-size:1rem;}
+  .mode-sub{font-size:.82rem;margin-bottom:1rem;}
+  .mode-card{padding:.8rem;}
+  .mode-card-desc{font-size:.72rem;}
+  .room-code{font-size:1.5rem;letter-spacing:.2em;}
+  .room-input{font-size:1.2rem;padding:.6rem;}
+
+  .instr-nav{overflow-x:auto;flex-wrap:nowrap;-webkit-overflow-scrolling:touch;}
+  .instr-tab{white-space:nowrap;flex-shrink:0;}
+}
+
+/* ═══════════════════════════════════════════════════════════
+   TOUCH OPTIMISATION
+═══════════════════════════════════════════════════════════ */
+@media(hover:none) and (pointer:coarse){
+  .cover-btn,.ctrl-btn,.topbar-btn,.sel-play-btn,.room-btn,.mode-card,.c-card-board{
+    min-height:44px;
+  }
+  .car-arrow{width:40px;height:40px;}
+  .instr-tab{min-height:36px;}
+  .back-btn{min-height:36px;}
+}
+
 </style>
 </head>
 <body>
